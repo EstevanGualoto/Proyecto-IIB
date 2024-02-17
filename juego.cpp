@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
-#include <cstdlib> // Para la función rand()
+#include <cstdlib> 
 
 using namespace std;
 
@@ -12,6 +12,7 @@ struct Jugador {
 };
 
 void mostrarMenu() {
+    cout << "Preguntas y respuestas\n";
     cout << "Menu:\n";
     cout << "1. Jugar\n";
     cout << "2. Puntajes\n";
@@ -25,12 +26,8 @@ void jugar(vector<Jugador>& jugadores) {
 
     cout << "Ingrese su nombre: ";
     getline(cin, nombre);
-
-    // Preguntas y respuestas
     cout << "Hola " << nombre << ", vamos a empezar el juego de preguntas y respuestas!\n";
     cout << "Responde las siguientes preguntas escribiendo la opción correcta (a, b o c).\n";
-    
-    // Pregunta 1
     cout << "\nPregunta 1: ¿Qué es C++?\n";
     cout << "a) Un lenguaje de programación.\n";
     cout << "b) Una fruta.\n";
@@ -44,7 +41,6 @@ void jugar(vector<Jugador>& jugadores) {
         cout << "Respuesta incorrecta.\n";
     }
 
-    // Pregunta 2
     cout << "\nPregunta 2: ¿Qué es una clase en C++?\n";
     cout << "a) Un tipo de dato.\n";
     cout << "b) Una función.\n";
@@ -57,8 +53,6 @@ void jugar(vector<Jugador>& jugadores) {
     } else {
         cout << "Respuesta incorrecta.\n";
     }
-
-    // Pregunta 3
     cout << "\nPregunta 3: ¿Qué es 'cout' en C++?\n";
     cout << "a) Una palabra reservada.\n";
     cout << "b) Una operación aritmética.\n";
@@ -71,8 +65,6 @@ void jugar(vector<Jugador>& jugadores) {
     } else {
         cout << "Respuesta incorrecta.\n";
     }
-
-    // Actualizar puntaje del jugador
     Jugador jugador = {nombre, puntaje};
     jugadores.push_back(jugador);
 }
@@ -88,14 +80,12 @@ void mostrarPuntajes(const vector<Jugador>& jugadores) {
         cout << i + 1 << ". " << sortedJugadores[i].nombre << ": " << sortedJugadores[i].puntaje << "\n";
     }
 }
-
 void mostrarCreditos() {
     cout << "Desarrollado por:\n";
     cout << "- Integrante 1\n";
     cout << "- Integrante 2\n";
     cout << "- Integrante 3\n";
 }
-
 int main() {
     vector<Jugador> jugadores;
     int opcion;
