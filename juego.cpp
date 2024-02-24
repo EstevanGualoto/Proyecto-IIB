@@ -5,12 +5,10 @@
 #include <cstdlib> 
 
 using namespace std;
-
 struct Jugador {
     string nombre;
     int puntaje;
 };
-
 void mostrarMenu() {
     cout << "Preguntas y respuestas\n";
     cout << "Menu:\n";
@@ -19,11 +17,9 @@ void mostrarMenu() {
     cout << "3. Créditos\n";
     cout << "4. Salir\n";
 }
-
 void jugar(vector<Jugador>& jugadores) {
     string nombre;
     int puntaje = 0;
-
     cout << "Ingrese su nombre: ";
     getline(cin, nombre);
     cout << "Hola " << nombre << ", vamos a empezar el juego de preguntas y respuestas!\n";
@@ -68,7 +64,6 @@ void jugar(vector<Jugador>& jugadores) {
     Jugador jugador = {nombre, puntaje};
     jugadores.push_back(jugador);
 }
-
 void mostrarPuntajes(const vector<Jugador>& jugadores) {
     cout << "Puntajes:\n";
     vector<Jugador> sortedJugadores = jugadores;
@@ -89,7 +84,6 @@ void mostrarCreditos() {
 int main() {
     vector<Jugador> jugadores;
     int opcion;
-
     do {
         mostrarMenu();
         cin >> opcion;
@@ -113,6 +107,5 @@ int main() {
                 break;
         }
     } while (opcion != 4);
-
     return 0;
 }
