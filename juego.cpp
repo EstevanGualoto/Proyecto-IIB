@@ -5,6 +5,27 @@
 #include <cstdlib>
 #include <fstream>
 
+#include<iostream>
+#include<cstdlib>
+#include<fstream>
+using namespace std;
+
+string linea;
+string texto;
+
+int main() {
+    ifstream archivo("documento.txt");
+    while (getline(archivo, linea)) {
+        texto = texto + linea + "\n";
+    }
+    archivo.close();
+    cout << texto << endl;
+
+    ofstream archivo2("documento.txt");
+    archivo2 << "sdgsg";
+    archivo2.close();
+    return 0;
+}
 using namespace std;
 struct Jugador {
     string nombre;
@@ -37,7 +58,6 @@ void jugar(vector<Jugador>& jugadores) {
     } else {
         cout << "Respuesta incorrecta.\n";
     }
-
     cout << "\nPregunta 2: ¿Qué es una clase en C++?\n";
     cout << "a) Un tipo de dato.\n";
     cout << "b) Una función.\n";
@@ -78,9 +98,8 @@ void mostrarPuntajes(const vector<Jugador>& jugadores) {
 }
 void mostrarCreditos() {
     cout << "Desarrollado por:\n";
-    cout << "- Integrante 1\n";
-    cout << "- Integrante 2\n";
-    cout << "- Integrante 3\n";
+    cout << "- Estevan Gualoto\n";
+    cout << "- Juan Castañeda\n";
 }
 int main() {
     vector<Jugador> jugadores;
