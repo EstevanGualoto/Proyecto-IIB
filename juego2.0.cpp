@@ -2,14 +2,70 @@
 #include <vector>
 #include <string>
 #include <algorithm>
-#include <cstdlib>
 #include <fstream>
 
 using namespace std;
+
 struct Jugador {
     string nombre;
     int puntaje;
 };
+void cargarPuntajes(vector<Jugador>& jugadores);
+void guardarPuntajes(const vector<Jugador>& jugadores);
+void mostrarMenu();
+void jugar(vector<Jugador>& jugadores);
+void mostrarPuntajes(const vector<Jugador>& jugadores);
+void mostrarCreditos();
+int main() {
+    vector<Jugador> jugadores;
+    cargarPuntajes(jugadores);
+
+    int opcion;
+    do {
+        mostrarMenu();
+        cin >> opcion;
+        cin.ignore();
+
+        switch (opcion) {
+            case 1:
+                jugar(jugadores);
+                break;
+            case 2:
+                mostrarPuntajes(jugadores);
+                break;
+            case 3:
+                mostrarCreditos();
+                break;
+            case 4:
+                cout << "¡Hasta luego!\n";
+                break;
+            default:
+                cout << "Opción inválida. Intente de nuevo.\n";
+                break;
+        }
+    } while (opcion != 4);
+    guardarPuntajes(jugadores);
+    return 0;
+}
+void cargarPuntajes(vector<Jugador>& jugadores) {
+    ifstream archivo("puntajes.txt");
+    if (archivo.is_open()) {
+        Jugador jugador;
+        while (archivo >> jugador.nombre >> jugador.puntaje) {
+            jugadores.push_back(jugador);
+        }
+        archivo.close();
+    }
+}
+void guardarPuntajes(const vector<Jugador>& jugadores) {
+    ofstream archivo("puntajes.txt");
+    if (archivo.is_open()) {
+        for (const auto& jugador : jugadores) {
+            archivo << jugador.nombre << " " << jugador.puntaje << endl;
+        }
+        archivo.close();
+    }
+}
 void mostrarMenu() {
     cout << "Preguntas y respuestas\n";
     cout << "Menu:\n";
@@ -66,45 +122,12 @@ void jugar(vector<Jugador>& jugadores) {
 }
 void mostrarPuntajes(const vector<Jugador>& jugadores) {
     cout << "Puntajes:\n";
-    vector<Jugador> sortedJugadores = jugadores;
-    sort(sortedJugadores.begin(), sortedJugadores.end(), [](const Jugador& a, const Jugador& b) {
-        return a.puntaje > b.puntaje;
-    });
-
-    for (int i = 0; i < min(static_cast<int>(sortedJugadores.size()), 3); i++) {
-        cout << i + 1 << ". " << sortedJugadores[i].nombre << ": " << sortedJugadores[i].puntaje << "\n";
+    for (int i = 0; i < min(static_cast<int>(jugadores.size()), 3); i++) {
+        cout << i + 1 << ". " << jugadores[i].nombre << ": " << jugadores[i].puntaje << "\n";
     }
 }
 void mostrarCreditos() {
     cout << "Desarrollado por:\n";
     cout << "- Estevan Gualoto\n";
     cout << "- Juan Castañeda\n";
-}
-int main() {
-    vector<Jugador> jugadores;
-    int opcion;
-    do {
-        mostrarMenu();
-        cin >> opcion;
-        cin.ignore();
-        switch (opcion) {
-            case 1:
-                jugar(jugadores);
-                break;
-            case 2:
-                mostrarPuntajes(jugadores);
-                break;
-            case 3:
-                mostrarCreditos();
-                break;
-            case 4:
-                cout << "¡Hasta luego!\n";
-                break;
-            default:
-                cout << "Opción inválida. Intente de nuevo.\n";
-                break;
-        }
-    } while (opcion != 4);
-    system("pause");
-    return 0;
 }

@@ -1,0 +1,15 @@
+/workspaces/Proyecto-IIB/bin/Debug/net8.0/Proyecto-IIB
+/workspaces/Proyecto-IIB/bin/Debug/net8.0/Proyecto-IIB.deps.json
+/workspaces/Proyecto-IIB/bin/Debug/net8.0/Proyecto-IIB.runtimeconfig.json
+/workspaces/Proyecto-IIB/bin/Debug/net8.0/Proyecto-IIB.dll
+/workspaces/Proyecto-IIB/bin/Debug/net8.0/Proyecto-IIB.pdb
+/workspaces/Proyecto-IIB/obj/Debug/net8.0/Proyecto-IIB.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Proyecto-IIB/obj/Debug/net8.0/Proyecto-IIB.AssemblyInfoInputs.cache
+/workspaces/Proyecto-IIB/obj/Debug/net8.0/Proyecto-IIB.AssemblyInfo.cs
+/workspaces/Proyecto-IIB/obj/Debug/net8.0/Proyecto-IIB.csproj.CoreCompileInputs.cache
+/workspaces/Proyecto-IIB/obj/Debug/net8.0/Proyecto-IIB.sourcelink.json
+/workspaces/Proyecto-IIB/obj/Debug/net8.0/Proyecto-IIB.dll
+/workspaces/Proyecto-IIB/obj/Debug/net8.0/refint/Proyecto-IIB.dll
+/workspaces/Proyecto-IIB/obj/Debug/net8.0/Proyecto-IIB.pdb
+/workspaces/Proyecto-IIB/obj/Debug/net8.0/Proyecto-IIB.genruntimeconfig.cache
+/workspaces/Proyecto-IIB/obj/Debug/net8.0/ref/Proyecto-IIB.dll
