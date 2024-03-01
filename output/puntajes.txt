@@ -3,3 +3,5 @@ est 2
 e 2
 yo 3
 essjkfjks 3
+1 10
+y 8
