@@ -143,187 +143,185 @@ void jugar(vector<Jugador>& jugadores) {
     }
     cout << "\nPregunta 6: ¿Qué es una referencia en C++?\n";
     cout << "a) Un puntero constante.\n";
-cout << "b) Una variable que almacena la dirección de memoria de otra variable.\n";
-cout << "c) Un tipo de dato para representar números reales.\n";
-char respuesta6;
-cin >> respuesta6;
-if (respuesta6 == 'b' || respuesta6 == 'B') {
+    cout << "b) Una variable que almacena la dirección de memoria de otra variable.\n";
+    cout << "c) Un tipo de dato para representar números reales.\n";
+    char respuesta6;
+    cin >> respuesta6;
+    if (respuesta6 == 'b' || respuesta6 == 'B') {
     cout << "¡Respuesta correcta!\n";
     puntaje++;
-} else {
+    } else {
     cout << "Respuesta incorrecta.\n";
-}
-
-cout << "\nPregunta 7: ¿Cuál es el operador utilizado para la asignación en C++?\n";
-cout << "a) =\n";
-cout << "b) ==\n";
-cout << "c) :=\n";
-char respuesta7;
-cin >> respuesta7;
-if (respuesta7 == 'a' || respuesta7 == 'A') {
+    }
+    cout << "\nPregunta 7: ¿Cuál es el operador utilizado para la asignación en C++?\n";
+    cout << "a) =\n";
+    cout << "b) ==\n";
+    cout << "c) :=\n";
+    char respuesta7;
+    cin >> respuesta7;
+    if (respuesta7 == 'a' || respuesta7 == 'A') {
     cout << "¡Respuesta correcta!\n";
     puntaje++;
-} else {
+    } else {
     cout << "Respuesta incorrecta.\n";
-}
-cout << "\nPregunta 8: ¿Cómo se declara una función en C++?\n";
-cout << "a) function myFunction() {}\n";
-cout << "b) void myFunction() {}\n";
-cout << "c) def myFunction() {}\n";
-char respuesta8;
-cin >> respuesta8;
-if (respuesta8 == 'b' || respuesta8 == 'B') {
+    }
+    cout << "\nPregunta 8: ¿Cómo se declara una función en C++?\n";
+    cout << "a) function myFunction() {}\n";
+    cout << "b) void myFunction() {}\n";
+    cout << "c) def myFunction() {}\n";
+    char respuesta8;
+    cin >> respuesta8;
+    if (respuesta8 == 'b' || respuesta8 == 'B') {
     cout << "¡Respuesta correcta!\n";
     puntaje++;
-} else {
+    } else {
     cout << "Respuesta incorrecta.\n";
-}
-
-cout << "\nPregunta 9: ¿Cuál es la diferencia entre '++i' y 'i++'?\n";
-cout << "a) No hay diferencia, ambas incrementan la variable en 1.\n";
-cout << "b) '++i' incrementa antes de la evaluación, 'i++' incrementa después.\n";
-cout << "c) 'i++' incrementa antes de la evaluación, '++i' incrementa después.\n";
-char respuesta9;
-cin >> respuesta9;
-if (respuesta9 == 'b' || respuesta9 == 'B') {
+    }
+    cout << "\nPregunta 9: ¿Cuál es la diferencia entre '++i' y 'i++'?\n";
+    cout << "a) No hay diferencia, ambas incrementan la variable en 1.\n";
+    cout << "b) '++i' incrementa antes de la evaluación, 'i++' incrementa después.\n";
+    cout << "c) 'i++' incrementa antes de la evaluación, '++i' incrementa después.\n";
+    char respuesta9;
+    cin >> respuesta9;
+    if (respuesta9 == 'b' || respuesta9 == 'B') {
     cout << "¡Respuesta correcta!\n";
     puntaje++;
-} else {
+    } else {
     cout << "Respuesta incorrecta.\n";
-}
-   cout << "\nPregunta 10: ¿Qué es un puntero en C++?\n";
-cout << "a) Un tipo de dato para almacenar números reales.\n";
-cout << "b) Una variable que almacena la dirección de memoria de otra variable.\n";
-cout << "c) Una estructura de control de flujo.\n";
-char respuesta10;
-cin >> respuesta10;
-if (respuesta10 == 'b' || respuesta10 == 'B') {
+    }
+    cout << "\nPregunta 10: ¿Qué es un puntero en C++?\n";
+    cout << "a) Un tipo de dato para almacenar números reales.\n";
+    cout << "b) Una variable que almacena la dirección de memoria de otra variable.\n";
+    cout << "c) Una estructura de control de flujo.\n";
+    char respuesta10;
+    cin >> respuesta10;
+    if (respuesta10 == 'b' || respuesta10 == 'B') {
     cout << "¡Respuesta correcta!\n";
     puntaje++;
-} else {
+    } else {
     cout << "Respuesta incorrecta.\n";
-}
-cout << "\nPregunta 11: ¿Cómo se declara un vector en C++?\n";
-cout << "a) vector<int> vec;\n";
-cout << "b) int[] vec;\n";
-cout << "c) array vec;\n";
-char respuesta11;
-cin >> respuesta11;
-if (respuesta11 == 'a' || respuesta11 == 'A') {
+    }
+    cout << "\nPregunta 11: ¿Cómo se declara un vector en C++?\n";
+    cout << "a) vector<int> vec;\n";
+    cout << "b) int[] vec;\n";
+    cout << "c) array vec;\n";
+    char respuesta11;
+    cin >> respuesta11;
+    if (respuesta11 == 'a' || respuesta11 == 'A') {
     cout << "¡Respuesta correcta!\n";
     puntaje++;
-} else {
+    } else {
     cout << "Respuesta incorrecta.\n";
-}
-cout << "\nPregunta 12: ¿Cómo se accede al elemento en la posición i de un vector 'v'?\n";
-cout << "a) v(i);\n";
-cout << "b) v[i];\n";
-cout << "c) v.at(i);\n";
-char respuesta12;
-cin >> respuesta12;
-if (respuesta12 == 'b' || respuesta12 == 'B') {
+    }
+    cout << "\nPregunta 12: ¿Cómo se accede al elemento en la posición i de un vector 'v'?\n";
+    cout << "a) v(i);\n";
+    cout << "b) v[i];\n";
+    cout << "c) v.at(i);\n";
+    char respuesta12;
+    cin >> respuesta12;
+    if (respuesta12 == 'b' || respuesta12 == 'B') {
     cout << "¡Respuesta correcta!\n";
     puntaje++;
-} else {
+    } else {
     cout << "Respuesta incorrecta.\n";
-}
-cout << "\nPregunta 13: ¿Cómo se obtiene el tamaño de un vector 'v' en C++?\n";
-cout << "a) v.length();\n";
-cout << "b) v.size();\n";
-cout << "c) v.capacity();\n";
-char respuesta13;
-cin >> respuesta13;
-if (respuesta13 == 'b' || respuesta13 == 'B') {
+    }
+    cout << "\nPregunta 13: ¿Cómo se obtiene el tamaño de un vector 'v' en C++?\n";
+    cout << "a) v.length();\n";
+    cout << "b) v.size();\n";
+    cout << "c) v.capacity();\n";
+    char respuesta13;
+    cin >> respuesta13;
+    if (respuesta13 == 'b' || respuesta13 == 'B') {
     cout << "¡Respuesta correcta!\n";
     puntaje++;
-} else {
+    } else {
     cout << "Respuesta incorrecta.\n";
-}
-cout << "\nPregunta 14: ¿Cómo se añade un elemento al final de un vector 'v'?\n";
-cout << "a) v.pushBack();\n";
-cout << "b) v.append();\n";
-cout << "c) v.push_back();\n";
-char respuesta14;
-cin >> respuesta14;
-if (respuesta14 == 'c' || respuesta14 == 'C') {
+    }
+    cout << "\nPregunta 14: ¿Cómo se añade un elemento al final de un vector 'v'?\n";
+    cout << "a) v.pushBack();\n";
+    cout << "b) v.append();\n";
+    cout << "c) v.push_back();\n";
+    char respuesta14;
+    cin >> respuesta14;
+    if (respuesta14 == 'c' || respuesta14 == 'C') {
     cout << "¡Respuesta correcta!\n";
     puntaje++;
-} else {
+    } else {
     cout << "Respuesta incorrecta.\n";
-}
-cout << "\nPregunta 15 ¿Cómo se elimina el último elemento de un vector 'v'?\n";
-cout << "a) v.removeLast();\n";
-cout << "b) v.popBack();\n";
-cout << "c) v.pop_back();\n";
-char respuesta15;
-cin >> respuesta15;
-if (respuesta15 == 'c' || respuesta15 == 'C') {
+    }
+    cout << "\nPregunta 15 ¿Cómo se elimina el último elemento de un vector 'v'?\n";
+    cout << "a) v.removeLast();\n";
+    cout << "b) v.popBack();\n";
+    cout << "c) v.pop_back();\n";
+    char respuesta15;
+    cin >> respuesta15;
+    if (respuesta15 == 'c' || respuesta15 == 'C') {
     cout << "¡Respuesta correcta!\n";
     puntaje++;
-} else {
+    } else {
     cout << "Respuesta incorrecta.\n";
-}
-
-cout << "\nPregunta 16: ¿Cómo se verifica si un vector 'v' está vacío?\n";
-cout << "a) v.empty();\n";
-cout << "b) v.is_empty();\n";
-cout << "c) v.size() == 0;\n";
-char respuesta16;
-cin >> respuesta16;
-if (respuesta16 == 'a' || respuesta16 == 'A') {
+    }
+    cout << "\nPregunta 16: ¿Cómo se verifica si un vector 'v' está vacío?\n";
+    cout << "a) v.empty();\n";
+    cout << "b) v.is_empty();\n";
+    cout << "c) v.size() == 0;\n";
+    char respuesta16;
+    cin >> respuesta16;
+    if (respuesta16 == 'a' || respuesta16 == 'A') {
     cout << "¡Respuesta correcta!\n";
     puntaje++;
-} else {
+    } else {
     cout << "Respuesta incorrecta.\n";
-}
-cout << "\nPregunta 17 ¿Cómo se ordena un vector 'v' en orden ascendente?\n";
-cout << "a) sort(v);\n";
-cout << "b) v.sort();\n";
-cout << "c) ascending_sort(v);\n";
-char respuesta17;
-cin >> respuesta17;
-if (respuesta17 == 'a' || respuesta17 == 'A') {
+    }
+    cout << "\nPregunta 17 ¿Cómo se ordena un vector 'v' en orden ascendente?\n";
+    cout << "a) sort(v);\n";
+    cout << "b) v.sort();\n";
+    cout << "c) ascending_sort(v);\n";
+    char respuesta17;
+    cin >> respuesta17;
+    if (respuesta17 == 'a' || respuesta17 == 'A') {
     cout << "¡Respuesta correcta!\n";
     puntaje++;
-} else {
+    } else {
     cout << "Respuesta incorrecta.\n";
-}
-cout << "\nPregunta 18: ¿Cuál es el algoritmo de ordenamiento más comúnmente utilizado en C++?\n";
-cout << "a) QuickSort\n";
-cout << "b) MergeSort\n";
-cout << "c) std::sort\n";
-char respuesta18;
-cin >> respuesta18;
-if (respuesta18 == 'c' || respuesta18 == 'C') {
+    }
+    cout << "\nPregunta 18: ¿Cuál es el algoritmo de ordenamiento más comúnmente utilizado en C++?\n";
+    cout << "a) QuickSort\n";
+    cout << "b) MergeSort\n";
+    cout << "c) std::sort\n";
+    char respuesta18;
+    cin >> respuesta18;
+    if (respuesta18 == 'c' || respuesta18 == 'C') {
     cout << "¡Respuesta correcta!\n";
     puntaje++;
-} else {
+    } else {
     cout << "Respuesta incorrecta.\n";
-}
-cout << "\nPregunta 19: ¿Cómo se utiliza std::sort para ordenar un vector 'v' en orden descendente?\n";
-cout << "a) std::sort(v, descending);\n";
-cout << "b) std::sort(v, std::greater<int>());\n";
-cout << "c) std::sort.descending(v);\n";
-char respuesta19;
-cin >> respuesta19;
-if (respuesta19 == 'b' || respuesta19 == 'B') {
+    }
+    cout << "\nPregunta 19: ¿Cómo se utiliza std::sort para ordenar un vector 'v' en orden descendente?\n";
+    cout << "a) std::sort(v, descending);\n";
+    cout << "b) std::sort(v, std::greater<int>());\n";
+    cout << "c) std::sort.descending(v);\n";
+    char respuesta19;
+    cin >> respuesta19;
+    if (respuesta19 == 'b' || respuesta19 == 'B') {
     cout << "¡Respuesta correcta!\n";
     puntaje++;
-} else {
+    } else {
     cout << "Respuesta incorrecta.\n";
-}
-cout << "\nPregunta 20: ¿En qué biblioteca de C++ se encuentra la función std::sort?\n";
-cout << "a) <algorithm>\n";
-cout << "b) <vector>\n";
-cout << "c) <iostream>\n";
-char respuesta20;
-cin >> respuesta20;
-if (respuesta20 == 'a' || respuesta20 == 'A') {
+    }
+    cout << "\nPregunta 20: ¿En qué biblioteca de C++ se encuentra la función std::sort?\n";
+    cout << "a) <algorithm>\n";
+    cout << "b) <vector>\n";
+    cout << "c) <iostream>\n";
+    char respuesta20;
+    cin >> respuesta20;
+    if (respuesta20 == 'a' || respuesta20 == 'A') {
     cout << "¡Respuesta correcta!\n";
     puntaje++;
-} else {
+    } else {
     cout << "Respuesta incorrecta.\n";
-}
+    cout << "Puntaje: " <<puntaje;
+    }
     Jugador jugador = {nombre, puntaje};
     jugadores.push_back(jugador);
 }
