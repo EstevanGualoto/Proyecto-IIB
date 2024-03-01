@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <algorithm>
 #include <fstream>//manejar archivos
 #include <unistd.h> 
 
@@ -31,6 +30,7 @@ int main() {
     cargarPuntajes(jugadores);
     int opcion;
     do {
+        system("clear");
         mostrarMenu();
         cin >> opcion;
         cin.ignore();
@@ -77,6 +77,7 @@ void guardarPuntajes(const vector<Jugador>& jugadores) {
     }
 }
 void mostrarMenu() {
+    system("clear");
     cout <<GREEN<< "\t--QUIZZ--\n";
     cout <<RESET<< "Preguntas y respuestas\n";
     cout << "Menu\n";
@@ -103,10 +104,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta1;
     cin >> respuesta1;
     if (respuesta1 == 'a' || respuesta1 == 'A') {
-        cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
         puntaje++;
     } else {
-        cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -117,10 +118,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta2;
     cin >> respuesta2;
     if (respuesta2 == 'a' || respuesta2 == 'A') {
-        cout << "¡Respuesta correcta!\n";
-        puntaje++;
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
+    puntaje++;
     } else {
-        cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -131,10 +132,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta3;
     cin >> respuesta3;
     if (respuesta3 == 'c' || respuesta3 == 'C') {
-        cout << "¡Respuesta correcta!\n";
-        puntaje++;
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
+    puntaje++;
     } else {
-        cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -145,10 +146,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta4;
     cin >> respuesta4;
     if (respuesta4 == 'a' || respuesta4 == 'A') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
     } else {
-    cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -159,10 +160,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta5;
     cin >> respuesta5;
     if (respuesta5 == 'b' || respuesta5 == 'B') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
     } else {
-    cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -173,10 +174,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta6;
     cin >> respuesta6;
     if (respuesta6 == 'b' || respuesta6 == 'B') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
     } else {
-    cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -187,10 +188,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta7;
     cin >> respuesta7;
     if (respuesta7 == 'a' || respuesta7 == 'A') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
     } else {
-    cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -201,10 +202,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta8;
     cin >> respuesta8;
     if (respuesta8 == 'b' || respuesta8 == 'B') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
     } else {
-    cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -215,10 +216,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta9;
     cin >> respuesta9;
     if (respuesta9 == 'b' || respuesta9 == 'B') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
     } else {
-    cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -229,10 +230,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta10;
     cin >> respuesta10;
     if (respuesta10 == 'b' || respuesta10 == 'B') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
     } else {
-    cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -243,10 +244,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta11;
     cin >> respuesta11;
     if (respuesta11 == 'a' || respuesta11 == 'A') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
     } else {
-    cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -257,10 +258,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta12;
     cin >> respuesta12;
     if (respuesta12 == 'b' || respuesta12 == 'B') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
     } else {
-    cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -271,10 +272,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta13;
     cin >> respuesta13;
     if (respuesta13 == 'b' || respuesta13 == 'B') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
     } else {
-    cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -285,10 +286,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta14;
     cin >> respuesta14;
     if (respuesta14 == 'c' || respuesta14 == 'C') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
     } else {
-    cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -299,10 +300,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta15;
     cin >> respuesta15;
     if (respuesta15 == 'c' || respuesta15 == 'C') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
     } else {
-    cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -313,10 +314,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta16;
     cin >> respuesta16;
     if (respuesta16 == 'a' || respuesta16 == 'A') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
     } else {
-    cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -327,10 +328,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta17;
     cin >> respuesta17;
     if (respuesta17 == 'a' || respuesta17 == 'A') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
     } else {
-    cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -341,10 +342,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta18;
     cin >> respuesta18;
     if (respuesta18 == 'c' || respuesta18 == 'C') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
     } else {
-    cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -355,10 +356,10 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta19;
     cin >> respuesta19;
     if (respuesta19 == 'b' || respuesta19 == 'B') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
     } else {
-    cout << "Respuesta incorrecta.\n";
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     }
     sleep(2);
     system("clear");
@@ -369,31 +370,30 @@ void jugar(vector<Jugador>& jugadores) {
     char respuesta20;
     cin >> respuesta20;
     if (respuesta20 == 'a' || respuesta20 == 'A') {
-    cout << "¡Respuesta correcta!\n";
+    cout <<GREEN<< "¡Respuesta correcta! :) \n"<<RESET;
     puntaje++;
-    cout << "Tu puntaje es: " <<puntaje;
+    cout <<RED<< "Respuesta incorrecta. :( \n"<<RESET;
     } else {
     cout << "Respuesta incorrecta.\n";
-    cout << "Tu puntaje es: " <<puntaje;
-    sleep(2);
+    cout << "Tu puntaje es: " <<puntaje<<endl;
+    sleep(3);
     system("clear");
     }
     Jugador jugador = {nombre, puntaje};
     jugadores.push_back(jugador);
-    cout << "Tu puntaje es: " <<puntaje;
 }
 void mostrarPuntajes(const vector<Jugador>& jugadores) {
-    cout << "Puntajes:\n";
-    for (int i = 0; i < min(static_cast<int>(jugadores.size()), 3); i++) {
+    cout <<YELLOW<< "Puntajes:\n"<<RESET;
+    for (int i = 0; i < min(static_cast<int>(jugadores.size()), 100); i++) {
         cout << i + 1 << ". " << jugadores[i].nombre << ": " << jugadores[i].puntaje << "\n";
     }
-    sleep(2);
+    sleep(3);
     system("clear");
 }
 void mostrarCreditos() {
     cout <<GREEN<< "Desarrollado por:\n";
     cout <<RESET<< "- Estevan Gualoto\n";
     cout << "- Juan Castañeda\n";
-    sleep(2);
+    sleep(3);
     system("clear");
 }
