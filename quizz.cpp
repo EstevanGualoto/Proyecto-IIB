@@ -142,7 +142,7 @@ void jugar(vector<Jugador>& jugadores) {
     cout << "Respuesta incorrecta.\n";
     }
     cout << "\nPregunta 6: ¿Qué es una referencia en C++?\n";
-cout << "a) Un puntero constante.\n";
+    cout << "a) Un puntero constante.\n";
 cout << "b) Una variable que almacena la dirección de memoria de otra variable.\n";
 cout << "c) Un tipo de dato para representar números reales.\n";
 char respuesta6;
