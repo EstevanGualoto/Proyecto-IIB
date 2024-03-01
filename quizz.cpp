@@ -3,7 +3,16 @@
 #include <string>
 #include <algorithm>
 #include <fstream>
+#include <unistd.h> 
 
+#define RESET   "\033[0m"
+#define RED     "\033[31m"
+#define GREEN   "\033[32m"
+#define YELLOW  "\033[33m"
+#define BLUE    "\033[34m"
+#define MAGENTA "\033[35m"
+#define CYAN    "\033[36m"
+#define WHITE   "\033[37m"
 using namespace std;
 
 struct Jugador {
@@ -79,8 +88,10 @@ void jugar(vector<Jugador>& jugadores) {
     int puntaje = 0;
     cout << "Ingrese su nombre: ";
     getline(cin, nombre);
-    cout << "Hola " << nombre << ", vamos a empezar el juego de preguntas y respuestas!\n";
+    cout << "Hola " << nombre << ", vamos a empezar el juego de preguntas y respuestas!\n"<<RED;
     cout << "Responde las siguientes preguntas escribiendo la opción correcta (a, b o c).\n";
+    sleep(2);
+    system("clear");
     cout << "\nPregunta 1: ¿Qué es C++?\n";
     cout << "a) Un lenguaje de programación.\n";
     cout << "b) Una fruta.\n";
@@ -93,6 +104,8 @@ void jugar(vector<Jugador>& jugadores) {
     } else {
         cout << "Respuesta incorrecta.\n";
     }
+    sleep(2);
+    system("clear");
     cout << "\nPregunta 2: ¿Que es una clase en C++?\n";
     cout << "a) Un tipo de dato.\n";
     cout << "b) Una función.\n";
@@ -105,6 +118,8 @@ void jugar(vector<Jugador>& jugadores) {
     } else {
         cout << "Respuesta incorrecta.\n";
     }
+    sleep(2);
+    system("clear");
     cout << "\nPregunta 3: ¿Qué es 'cout' en C++?\n";
     cout << "a) Una palabra reservada.\n";
     cout << "b) Una operación aritmética.\n";
@@ -117,6 +132,8 @@ void jugar(vector<Jugador>& jugadores) {
     } else {
         cout << "Respuesta incorrecta.\n";
     }
+    sleep(2);
+    system("clear");
     cout << "\nPregunta 4: ¿Qué es 'cin' en C++?\n";
     cout << "a) Un flujo de entrada.\n";
     cout << "b) Una struct.\n";
@@ -129,6 +146,7 @@ void jugar(vector<Jugador>& jugadores) {
     } else {
     cout << "Respuesta incorrecta.\n";
     }
+    system("clear");
     cout << "\nPregunta 5: ¿Qué es una struct?\n";
     cout << "a) Un tipo de lenguaje.\n";
     cout << "b) Es una declaración de tipo de datos compuestos que define una lista de variables\n";
