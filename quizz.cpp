@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
-#include <fstream>
+#include <fstream>//manejar archivos
 #include <unistd.h> 
 
 #define RESET   "\033[0m"
@@ -29,13 +29,11 @@ void mostrarCreditos();
 int main() {
     vector<Jugador> jugadores;
     cargarPuntajes(jugadores);
-
     int opcion;
     do {
         mostrarMenu();
         cin >> opcion;
         cin.ignore();
-
         switch (opcion) {
             case 1:
                 jugar(jugadores);
@@ -51,6 +49,8 @@ int main() {
                 break;
             default:
                 cout << "Opción inválida. Intente de nuevo.\n";
+                sleep(2);
+                system("clear");
                 break;
         }
     } while (opcion != 4);
@@ -88,16 +88,18 @@ void mostrarMenu() {
 void jugar(vector<Jugador>& jugadores) {
     string nombre;
     int puntaje = 0;
+    sleep(2);
+    system("clear");
     cout << "Ingrese su nombre: ";
     getline(cin, nombre);
     cout << "Hola " << nombre << ", vamos a empezar el juego de preguntas y respuestas!\n";
     cout << "Responde las siguientes preguntas escribiendo la opción correcta (a, b o c).\n";
-    sleep(2);
+    sleep(8);
     system("clear");
     cout <<RED<< "\nPregunta 1: ¿Qué es C++?\n";
-    cout <<RESET<< "a) Un lenguaje de programación.\n";
-    cout << "b) Una fruta.\n";
-    cout << "c) Un país.\n";
+    cout <<RESET<< "a) C++ es un lenguaje de programación de propósito general que se utiliza para el desarrollo de aplicaciones de software de alto rendimiento y sistemas de software complejos. \n";
+    cout << "b) C++ es un sistema operativo utilizado principalmente en servidores de redes.\n";
+    cout << "c) C++ es un software de diseño gráfico utilizado para crear animaciones en 3D.\n";
     char respuesta1;
     cin >> respuesta1;
     if (respuesta1 == 'a' || respuesta1 == 'A') {
@@ -369,6 +371,7 @@ void jugar(vector<Jugador>& jugadores) {
     if (respuesta20 == 'a' || respuesta20 == 'A') {
     cout << "¡Respuesta correcta!\n";
     puntaje++;
+    cout << "Tu puntaje es: " <<puntaje;
     } else {
     cout << "Respuesta incorrecta.\n";
     cout << "Tu puntaje es: " <<puntaje;
@@ -377,6 +380,7 @@ void jugar(vector<Jugador>& jugadores) {
     }
     Jugador jugador = {nombre, puntaje};
     jugadores.push_back(jugador);
+    cout << "Tu puntaje es: " <<puntaje;
 }
 void mostrarPuntajes(const vector<Jugador>& jugadores) {
     cout << "Puntajes:\n";
