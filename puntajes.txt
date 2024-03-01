@@ -1,1 +1,3 @@
-killer 7
+<nombre, puntaje>
+<nombre, puntaje>
+<nombre, puntaje>
