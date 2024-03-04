@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <fstream>//manejar archivos
+#include <fstream>
 #include <unistd.h> 
 
 #define RESET   "\033[0m"
